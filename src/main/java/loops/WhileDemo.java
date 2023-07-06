@@ -42,5 +42,4 @@ public class WhileDemo {
         } while (inputValue > 0);
         System.out.printf("\n2. You have entered %d. Factorial is: %d", number, result);
     }
-
 }
