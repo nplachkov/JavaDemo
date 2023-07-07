@@ -14,6 +14,7 @@ public class ForDemo {
             System.out.printf("Current value of i (index) is: %d\n", i);
 
         }
+
         System.out.println("------------------------------------");
 
 

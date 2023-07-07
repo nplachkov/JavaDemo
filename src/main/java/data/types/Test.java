@@ -10,13 +10,13 @@ public class Test {
         Variables o2 = new Variables();
 
         //Question 1
-        System.out.println("1. How old are you?"); //Prints out a message
+        System.out.printf("1. How old are you? - "); //Prints out a message
         Scanner scanner1 = new Scanner(System.in); //Asks for input
         String ageScan1 = scanner1.nextLine(); //Stores the input
         o1.age= Byte.parseByte(ageScan1); //age = to byte input
 
         //Question 2
-        System.out.println("2. How old are you?");
+        System.out.printf("2. How old are you? - ");
         Scanner scanner2 = new Scanner(System.in);
         String ageScan2 = scanner2.nextLine();
         o2.age= Byte.parseByte(ageScan2);
@@ -28,7 +28,6 @@ public class Test {
 
         o1.printAge(); //Prints the inputted age
         o1.printCanDrink(); //Prints yes/no depending on the age
-        System.out.println("");
         o2.printAge();
         o2.printCanDrink();
     }
