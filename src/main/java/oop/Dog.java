@@ -93,8 +93,11 @@ public class Dog {
     public void sleeps(){
         System.out.println(this.name + " is sleeping...");
     }
-
-
-
-
+    public void dogDetails(){
+        System.out.println("Name: " + getName());
+        System.out.println("Age: " + getAge());
+        System.out.println("Breed: " + getBreed());
+        System.out.println("Sex: " + getSex());
+        System.out.println("Weight (kg): " + getWeight());
+    }
 }
