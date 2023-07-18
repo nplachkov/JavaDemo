@@ -15,8 +15,13 @@ public class Dog {
         return breed;
     }
 
-    public void setBreed(String breed) {
-        this.breed = breed;
+    private void setBreed(String breed) {
+        if (!breed.isEmpty()) {
+            this.breed = breed;
+        }
+        else{
+            System.out.println("Error. Please enter a valid breed.");
+        }
     }
 
     public float getWeight() {
@@ -24,7 +29,12 @@ public class Dog {
     }
 
     public void setWeight(float weight) {
-        this.weight = weight;
+        if (weight >= 0.1f) {
+            this.weight = weight;
+        }
+        else{
+            System.out.println("Error. Please enter a valid weight.");
+        }
 
     }
 
@@ -33,7 +43,12 @@ public class Dog {
     }
 
     public void setSex(String sex) {
-        this.sex = sex;
+        if (!sex.isEmpty()) {
+            this.sex = sex;
+        }
+        else{
+            System.out.println("Error. Please enter a valid sex.");
+        }
     }
 
     public byte getAge() {
@@ -41,10 +56,11 @@ public class Dog {
     }
 
     public void setAge(byte age) {
-        if (age >= 0) {
+        if (age > 0) {
             this.age = age;
-        }else {
-            System.out.println("error");
+        }
+        else {
+            System.out.println("Error. Please enter a valid age.");
         }
     }
 
@@ -53,8 +69,19 @@ public class Dog {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (!name.isEmpty()) {
+            this.name = name;
+        }
+        else {
+            System.out.println("Error. Please enter a valid name.");
+        }
     }
+
+    //constructor
+    public Dog(String breed){
+        setBreed(breed);
+    }
+
 
     //actions
     public void bark(){
