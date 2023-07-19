@@ -1,6 +1,6 @@
 package oop;
 
-public class Pet {
+public class Pet implements PetActions {
     //characteristics
     private String breed;
     private float weight;
@@ -89,9 +89,24 @@ public class Pet {
     }
     public void petDetails(){
         System.out.println("Name: " + getName());
-        System.out.println("Age: " + getAge());
+        System.out.println("Age: " + getAge() + " years");
         System.out.println("Breed: " + getBreed());
         System.out.println("Sex: " + getSex());
-        System.out.println("Weight (kg): " + getWeight());
+        System.out.println("Weight: " + getWeight() + "kg");
+    }
+
+    @Override
+    public void walk() {
+        System.out.println(getName() + " is walking...");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(getName() + " is sleeping...");
+    }
+
+    @Override
+    public void makeNoise() {
+        System.out.println(getName() + " is making noise...");
     }
 }

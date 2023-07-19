@@ -19,16 +19,12 @@ public class Test {
         Leo.setWeight(25.0f);
 
         //Cat 1
-        Cat SnowWhite = new Cat("Persian");
-        SnowWhite.setName("SnowWhite");
-        SnowWhite.setAge((byte) 3);
-        SnowWhite.setSex("Female");
-        SnowWhite.setWeight(3.5f);
+        Cat Snowball = new Cat("Persian");
+        Snowball.setName("Snowball");
+        Snowball.setAge((byte) 3);
+        Snowball.setSex("Female");
+        Snowball.setWeight(3.5f);
 
-       Hera.petDetails();
-       Leo.petDetails();
-
-       Hera.bark();
-       SnowWhite.petDetails();
+       Snowball.petDetails();
     }
 }
