@@ -18,7 +18,7 @@ public class Pet implements PetActions {
             this.breed = breed;
         }
         else{
-            System.out.println("Error. Please enter a valid breed.");
+            //System.out.println("Error. Please enter a valid breed.");
         }
     }
 
@@ -31,7 +31,7 @@ public class Pet implements PetActions {
             this.weight = weight;
         }
         else{
-            System.out.println("Error. Please enter a valid weight.");
+            //System.out.println("Error. Please enter a valid weight.");
         }
 
     }
@@ -45,7 +45,7 @@ public class Pet implements PetActions {
             this.sex = sex;
         }
         else{
-            System.out.println("Error. Please enter a valid sex.");
+            //System.out.println("Error. Please enter a valid sex.");
         }
     }
 
@@ -58,20 +58,19 @@ public class Pet implements PetActions {
             this.age = age;
         }
         else {
-            System.out.println("Error. Please enter a valid age.");
+            //System.out.println("Error. Please enter a valid age.");
         }
     }
 
     public String getName() {
         return name;
     }
-
     public void setName(String name) { //validates if the string name has a valid input.
         if (!name.isEmpty()) {
             this.name = name;
         }
         else {
-            System.out.println("Error. Please enter a valid name.");
+            //System.out.println("Error. Please enter a valid name.");
         }
     }
 
@@ -102,10 +101,10 @@ public class Pet implements PetActions {
     public void makeNoise() {
         System.out.println(getName() + " is making noise...");
     }
-
     public void petDetails(){
         System.out.println("Name: " + getName());
         System.out.println("Age: " + getAge() + " years");
+        System.out.println("Type: " + getClass().getSimpleName());
         System.out.println("Breed: " + getBreed());
         System.out.println("Sex: " + getSex());
         System.out.println("Weight: " + getWeight() + "kg");
