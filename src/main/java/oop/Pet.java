@@ -87,13 +87,6 @@ public class Pet implements PetActions {
     public void sleeps(){
         System.out.println(getName() + " is sleeping...");
     }
-    public void petDetails(){
-        System.out.println("Name: " + getName());
-        System.out.println("Age: " + getAge() + " years");
-        System.out.println("Breed: " + getBreed());
-        System.out.println("Sex: " + getSex());
-        System.out.println("Weight: " + getWeight() + "kg");
-    }
 
     @Override
     public void walk() {
@@ -108,5 +101,13 @@ public class Pet implements PetActions {
     @Override
     public void makeNoise() {
         System.out.println(getName() + " is making noise...");
+    }
+
+    public void petDetails(){
+        System.out.println("Name: " + getName());
+        System.out.println("Age: " + getAge() + " years");
+        System.out.println("Breed: " + getBreed());
+        System.out.println("Sex: " + getSex());
+        System.out.println("Weight: " + getWeight() + "kg");
     }
 }
