@@ -46,6 +46,7 @@ public class EmployeeData {
         setDateOfBirth(dateOfBirth);
         setMonthlySalary(monthlySalary);
     }
+
     public void calculateBonus(boolean isTargetAchieved, double bonus){
         if (isTargetAchieved){
             setMonthlySalary(getMonthlySalary() + bonus);
