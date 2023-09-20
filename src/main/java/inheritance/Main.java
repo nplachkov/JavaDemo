@@ -10,10 +10,10 @@ public class Main {
         agent1.calculateBonus(true, 500);
         System.out.println(agent1.getMonthlySalary());
 
-        qa1.calculateBonus(true, true, 500);
+        qa1.calculateBonus(false, true, 500);
         System.out.println(qa1.getMonthlySalary());
 
-        qa2.calculateBonus(false, false, 500 );
+        qa2.calculateBonus(false, false,500 );
         System.out.println(qa2.getMonthlySalary());
     }
 }
